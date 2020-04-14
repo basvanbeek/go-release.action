@@ -2,7 +2,7 @@
 
 set -eux
 
-/build.sh	if [ -z "${CMD_PATH+x}" ]; then
+if [ -z "${CMD_PATH+x}" ]; then
   echo "::warning file=entrypoint.sh,line=6,col=1::CMD_PATH not set"
   export CMD_PATH=""
 fi
